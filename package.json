@@ -16,5 +16,8 @@
     "url": "https://github.com/sarvesh210498/cypress-repo/issues"
   },
   "homepage": "https://github.com/sarvesh210498/cypress-repo#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
 }
