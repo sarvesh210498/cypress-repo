@@ -1,0 +1,7 @@
+# Cypress logs and videos
+cypress/videos/
+cypress/screenshots/
+cypress/results/
+
+# Node modules
+node_modules/
