@@ -1,7 +1,46 @@
-# Cypress logs and videos
+# ===========================
+# Node / Cypress Essentials
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Cypress generated files
 cypress/videos/
 cypress/screenshots/
-cypress/results/
+cypress/downloads/
 
-# Node modules
-node_modules/
+# Cypress results (mochawesome JSON)
+cypress/results/
+cypress/results/mochawesome/
+
+# ===========================
+# Mochawesome Reports
+# ===========================
+mochawesome-report/
+mochawesome.html
+
+# HTML report assets
+*.css
+*.js
+*.map
+*.woff
+*.woff2
+*.ttf
+
+# ===========================
+# LambdaTest Artifacts
+# ===========================
+lt-artifacts/
+*.zip
+
+# ===========================
+# OS / Editor Files
+# ===========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
