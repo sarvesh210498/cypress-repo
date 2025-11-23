@@ -7,12 +7,12 @@
       {
          "browser": "Chrome",
          "platform": "Windows 10",
-         "versions": "latest"
+         "versions": ["latest"]
       },
       {
          "browser": "Firefox",
          "platform": "Windows 10",
-         "versions": "latest"
+         "versions": ["latest"]
       }
    ],
    "run_settings": {
