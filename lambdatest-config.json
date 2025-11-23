@@ -7,16 +7,19 @@
       {
          "browser": "Chrome",
          "platform": "Windows 10",
-         "versions": ["latest"]
+         "versions": [
+            "latest"
+         ]
       },
       {
          "browser": "Firefox",
          "platform": "Windows 10",
-         "versions": ["latest"]
+         "versions": [
+            "latest"
+         ]
       }
    ],
    "run_settings": {
-      "reporter_config_file": "base_reporter_config.json",
       "build_name": "build-name-210498",
       "parallels": 2,
       "specs": "./cypress/e2e/**/*.cy.js",
@@ -25,7 +28,10 @@
       "video": true,
       "headless": false,
       "npm_dependencies": {
-         "cypress": "^12.17.4"
+         "cypress": "12.17.4",
+         "mochawesome": "^7.1.3",
+         "mochawesome-merge": "^4.2.0",
+         "mochawesome-report-generator": "^6.0.1"
       }
    },
    "tunnel_settings": {
