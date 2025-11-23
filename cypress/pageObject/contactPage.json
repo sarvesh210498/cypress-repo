@@ -1,0 +1,11 @@
+{
+    
+    "contactName": "input[data-qa='name']",
+    "contactEmail": "input[data-qa='email']",
+    "contactSubject": "input[data-qa='subject']",
+    "contactMessage": "textarea[data-qa='message']",
+    "attachFile": "input[class='form-control']",
+    "submitButton": "input[data-qa='submit-button']",
+    "successMessage": "div[class='contact-form'] >:nth-child(3)",
+    "homeButtonAfterSubmit": "a[class='btn btn-success']"
+}

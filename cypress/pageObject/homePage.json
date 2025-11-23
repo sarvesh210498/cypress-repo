@@ -1,0 +1,10 @@
+{
+    "logo": "img[src='/static/images/home/logo.png']",
+    "logoutButton": "a[href='/logout']",
+    "signUpLoginButton": "a[href='/login']",
+    "contactUsButton": "a[href='/contact_us']",
+    "testCasesButton": "a[href='/test_cases']>i",
+    "footerSubscription": "[id= 'footer'] div div h2",
+    "subscribeButton": "[id='subscribe']",
+    "subscribeEmail": "[id='susbscribe_email']"
+}

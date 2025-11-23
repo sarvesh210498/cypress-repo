@@ -1,0 +1,15 @@
+{
+    "loginButton": "button[data-qa='login-button']",
+    "loginEmail": "input[data-qa='login-email']",
+    "loginPassword": "input[data-qa='login-password']",
+    "userName": "ul[class='nav navbar-nav']>li:nth-child(10)>a",
+    
+    "loginError": "form[action='/login']>p",
+    "signUpName": "input[data-qa='signup-name']",
+    "signUpEmail": "input[data-qa='signup-email']",
+    "signUpButton": "button[data-qa='signup-button']",
+    "signUpError": "div[class='signup-form']>form>p",
+    "newUserMessage": "div[class='signup-form'] > h2",
+    "loginPageMessage": "div[class='login-form']>h2"
+    
+}

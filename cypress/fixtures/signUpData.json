@@ -1,0 +1,19 @@
+{
+    "pswdVal": "testaut1",
+    "dayVal": "21",
+    "monthVal": "April",
+    "yearVal": "1998",
+    "firstNameVal": "First",
+    "lastNameVal": "Last",
+    "companyName": "BN",
+    "addressOneData": "200 Hisgh Street",
+    "addressTwoData": "Lane B",
+    "indiaTxt": "India",
+    "stateVal": "Maharashtra",
+    "cityVal": "Nagpur",
+    "pinCode": "440034",
+    "phNumber": "9897969594", 
+    "accountCreatedTxt": "Account Created!",
+    "successfulLoginTxt": " Logged in as User",
+    "accountDeletedTxt": "Account Deleted!"
+}

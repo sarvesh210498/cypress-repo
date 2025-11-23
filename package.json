@@ -18,6 +18,6 @@
   "homepage": "https://github.com/sarvesh210498/cypress-repo#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.0.0"
+    "cypress": "^12.17.4"
   }
 }

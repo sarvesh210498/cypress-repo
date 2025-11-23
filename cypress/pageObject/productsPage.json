@@ -1,0 +1,5 @@
+{
+    "productsTab": "a[href='/products']",
+    "searchProductTxtBox": "input[name='search']",
+    "searchProductBtn": "[id='submit_search']"
+}
