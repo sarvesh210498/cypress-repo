@@ -1,10 +1,10 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = defineConfig({
+export default defineConfig({
   reporter: "mochawesome",
   reporterOptions: {
     reportDir: "cypress/results/mochawesome",
-    overwrite: false,
+    overwrite: true,
     html: false,
     json: true
   },
