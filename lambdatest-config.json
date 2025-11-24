@@ -21,7 +21,7 @@
     "build_name": "cypress-build",
     "parallels": 1,
 
-    "reporter_config_file": "base_reporter_config.json",
+    "reporter_config_file": "reporter_config.json",
 
     "download_artifacts": false,
     "video": true,
