@@ -1,6 +1,6 @@
-import { defineConfig } from "cypress";
+const { defineConfig } = require("cypress");
 
-export default defineConfig({
+module.exports = defineConfig({
   reporter: "mochawesome",
   reporterOptions: {
     reportDir: "cypress/results/mochawesome",
@@ -8,9 +8,7 @@ export default defineConfig({
     html: false,
     json: true
   },
-
   e2e: {
-    specPattern: "cypress/e2e/**/*.cy.js",
     setupNodeEvents(on, config) {
       return config;
     }
