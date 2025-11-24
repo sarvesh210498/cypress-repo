@@ -1,41 +1,37 @@
 {
-   "lambdatest_auth": {
-      "username": "${LT_USERNAME}",
-      "access_key": "${LT_ACCESS_KEY}"
-   },
-   "browsers": [
-      {
-         "browser": "Chrome",
-         "platform": "Windows 10",
-         "versions": [
-            "latest"
-         ]
-      },
-      {
-         "browser": "Firefox",
-         "platform": "Windows 10",
-         "versions": [
-            "latest"
-         ]
-      }
-   ],
-   "run_settings": {
-      "specs": "cypress/e2e/**/*.cy.js",
-      "ignore_files": "",
-      "build_name": "cypress-build",
-      "parallels": 1,
-      "reporter_config_file": "reporter-config.json",
-      "download_artifacts": true,
-      "download_artifacts_path": "./lt-artifacts",
-      "video": true,
-      "network": false,
-      "headless": false,
-      "npm_dependencies": {
-         "cypress": "12.17.1"
-      }
-   },
-   "tunnel_settings": {
-      "tunnel": false,
-      "tunnel_name": null
-   }
+  "lambdatest_auth": {
+    "username": "${LT_USERNAME}",
+    "access_key": "${LT_ACCESS_KEY}"
+  },
+  "browsers": [
+    {
+      "browser": "Chrome",
+      "platform": "Windows 11",
+      "versions": ["latest"]
+    },
+    {
+      "browser": "Firefox",
+      "platform": "Windows 11",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "specs": "cypress/e2e/**/*.cy.js",
+    "ignore_files": [],
+    "build_name": "cypress-build",
+    "parallels": 1,
+
+    "reporter_config_file": "base_reporter_config.json",
+
+    "download_artifacts": false,
+    "video": true,
+    "network": false,
+    "headless": true,
+
+    "npm_dependencies": {}
+  },
+  "tunnel_settings": {
+    "tunnel": false,
+    "tunnel_name": null
+  }
 }
