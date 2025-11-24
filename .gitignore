@@ -24,7 +24,6 @@ mochawesome.html
 
 # HTML report assets
 *.css
-*.js
 *.map
 *.woff
 *.woff2
