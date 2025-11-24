@@ -6,31 +6,26 @@
   "browsers": [
     {
       "browser": "Chrome",
-      "platform": "Windows 11",
-      "versions": ["latest"]
-    },
-    {
-      "browser": "Firefox",
-      "platform": "Windows 11",
+      "platform": "Windows 10",
       "versions": ["latest"]
     }
   ],
   "run_settings": {
+    "upload_directory": ".",      
+    "build_name": "build-name-210498",
+    "parallels": 2,
     "specs": "cypress/e2e/**/*.cy.js",
     "ignore_files": "",
-    "build_name": "cypress-build",
-    "parallels": 1,
-
-    "reporter_config_file": "base_reporter_config.json",
-
-    "download_artifacts": false,
+    "network": true,
     "video": true,
-    "network": false,
-    "headless": true,
-
-         "npm_dependencies": {
-            "cypress": "12.17.1"
-         }
+    "headless": false,
+    "reporter_config_file": "base_reporter_config.json",
+    "npm_dependencies": {
+      "cypress": "12.17.4",
+      "mochawesome": "^7.1.4",
+      "mochawesome-merge": "^5.0.0",
+      "mochawesome-report-generator": "^6.3.2"
+    }
   },
   "tunnel_settings": {
     "tunnel": false,
