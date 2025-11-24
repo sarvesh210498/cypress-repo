@@ -1,5 +1,12 @@
-const { merge } = require('mochawesome-merge');
-const generate = require('mochawesome-report-generator');
+const { merge } = require("mochawesome-merge");
+const generate = require("mochawesome-report-generator");
 
-merge({ files: ['./cypress/results/mochawesome/*.json'] })
-  .then(report => generate.create(report));
+(async () => {
+  const report = await merge({
+    files: ["cypress/results/mochawesome/*.json"]
+  });
+
+  await generate.create(report, {
+    reportDir: "cypress/results/mochawesome"
+  });
+})();
