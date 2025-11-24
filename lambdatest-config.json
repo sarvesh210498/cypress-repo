@@ -17,7 +17,7 @@
   ],
   "run_settings": {
     "specs": "cypress/e2e/**/*.cy.js",
-    "ignore_files": [],
+    "ignore_files": "",
     "build_name": "cypress-build",
     "parallels": 1,
 
@@ -28,7 +28,9 @@
     "network": false,
     "headless": true,
 
-    "npm_dependencies": {}
+         "npm_dependencies": {
+            "cypress": "12.17.1"
+         }
   },
   "tunnel_settings": {
     "tunnel": false,
