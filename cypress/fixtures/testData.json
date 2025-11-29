@@ -23,5 +23,7 @@
     "searchedProductsTxt": "Searched Products",
     "subscriptionTxt": "Subscription",
     "subscriptionSuccessMsg": "You have been successfully subscribed!",
-    "accountInfoTxt": "Enter Account Information"
+    "accountInfoTxt": "Enter Account Information",
+    "apiURL": "https://gorest.co.in/public/v2/users",
+    "activeTxt": "active"
 }

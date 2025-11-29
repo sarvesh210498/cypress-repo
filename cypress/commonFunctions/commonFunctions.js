@@ -70,3 +70,17 @@ export const clickFirstElement = ({ locator }) => {
 export const selectListValue = ({ locator, value }) => {
     cy.get(locator).select(value);
 }
+
+export const randomNameGenerator = () => {
+    const chars = "abcdefghijklmnopqrstuvwxyz";
+    let name = "";
+    for (let i = 0; i < 7; i++) {
+    name += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
+export const randomEmailGenerator = () => {
+    const randomString = Math.random().toString(36).substring(2, 10);
+    return `user_${randomString}@testmail.com`;
+}

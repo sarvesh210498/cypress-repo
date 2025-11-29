@@ -2,12 +2,12 @@
   "name": "cypressrepo",
   "version": "1.0.0",
   "main": "cypress.config.js",
-"scripts": {
-  "cypress:run": "cypress run",
-  "merge:reports": "node merge-reports.js",
-  "lt:run": "lambdatest-cypress run --cy=\"--config-file cypress.config.js\"",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+  "scripts": {
+    "cypress:run": "cypress run",
+    "merge:reports": "node merge-reports.js",
+    "lt:run": "lambdatest-cypress run --cy=\"--config-file cypress.config.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sarvesh210498/cypress-repo.git"
