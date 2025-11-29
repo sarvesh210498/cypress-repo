@@ -5,7 +5,7 @@ const { apiURL, activeTxt } = testData;
 
 describe("POST user request", () => {
 
-    let accessToken = {tokenVal}
+    let accessToken = {tokenVal}; // Replace {tokenVal} with the actual token value or fetch it securely
     it("Create a new user", () => {
         const userName = randomNameGenerator();
         const email = randomEmailGenerator();
