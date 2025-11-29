@@ -15,9 +15,9 @@ This repository contains an end-to-end test automation framework built using **C
 
 ## 📁 **Project Structure**
 
-cypress-repo/
-│── cypress/
-│ ├── e2e/ # Test scripts (.cy.js/.spec.js)
+cypress-repo/\n
+│── cypress/\n
+│ ├── e2e/ # Test scripts (.cy.js/.spec.js)\n
 │ ├── fixtures/ # Test data (JSON)
 │ ├── support/
 │ │ ├── commands.js # Custom Cypress commands
