@@ -3,7 +3,7 @@ import testData from '../../fixtures/testData.json';
 const { apiURL, activeTxt } = testData;
 describe('GET /users API Tests', () => {
 
-    let accessToken = {tokenVal}
+    let accessToken = {tokenVal}; // Replace {tokenVal} with the actual token value or fetch it securely
     it("Fetch entire list", () => {
         cy.request({
             method: "GET",
