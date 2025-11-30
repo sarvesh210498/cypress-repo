@@ -16,20 +16,7 @@ describe("CRUD Operations", () => {
         }).then((response) => {
             // Assert the response status code
             expect(response.status).to.eq(200);
-            cy.log('Response Body:', JSON.stringify(response.body));
             expect(response.body.length).to.eq(10);
-        })
-    });
-    it("Fetch individual user list (GET)", () => {
-        cy.request({
-            method: "GET",
-            url: apiURL + "/{userId}", // Replace with a valid user ID
-            headers: {
-                "Authorization": "Bearer " + accessToken
-            }
-        }).then((response) => {
-            // Assert the response status code
-            expect(response.status).to.eq(200);
         })
     });
     it("Create a new user (POST) ", () => {
@@ -50,7 +37,6 @@ describe("CRUD Operations", () => {
             }
         }).then((response) => {
             expect(response.status).to.eq(201);
-            cy.log('Response Body:', JSON.stringify(response.body));
             expect(response.body).has.property("name", userName);
             expect(response.body).has.property("email", email);
             expect(response.body).has.property("status", activeTxt);
@@ -61,7 +47,6 @@ describe("CRUD Operations", () => {
         const timestamp = Date.now();
         const userName = `${automationUser}_${timestamp}`;
         const email = `${automationUser}_${timestamp}@gmail.com`;
-        cy.log(email)
         cy.request({
             method: "POST",
             url: apiURL,
@@ -77,12 +62,10 @@ describe("CRUD Operations", () => {
         }).then((response) => {
             // Assert the response status code
             expect(response.status).to.eq(201);
-            cy.log('Response Body:', JSON.stringify(response.body));
             expect(response.body).has.property("name", userName);
             expect(response.body).has.property("email", email);
             expect(response.body).has.property("status", activeTxt);
             userId = response.body.id;
-            cy.log("Created User ID:", userId);
         }).then(() => {
             cy.request({
                 method: "GET",
@@ -104,7 +87,6 @@ describe("CRUD Operations", () => {
         const timestamp = Date.now();
         const userName = `${automationUser}_${timestamp}`;
         const email = `${automationUser}_${timestamp}@gmail.com`;
-        cy.log(email)
         cy.request({
             method: "POST",
             url: apiURL,
@@ -120,12 +102,10 @@ describe("CRUD Operations", () => {
         }).then((response) => {
             // Assert the response status code
             expect(response.status).to.eq(201);
-            cy.log('Response Body:', JSON.stringify(response.body));
             expect(response.body).has.property("name", userName);
             expect(response.body).has.property("email", email);
             expect(response.body).has.property("status", activeTxt);
             userId = response.body.id;
-            cy.log("Created User ID:", userId);
         }).then(() => {
             cy.request({
                 method: "PUT",
@@ -154,7 +134,6 @@ describe("CRUD Operations", () => {
         const timestamp = Date.now();
         const userName = `${automationUser}_${timestamp}`;
         const email = `${automationUser}_${timestamp}@gmail.com`;
-        cy.log(email)
         cy.request({
             method: "POST",
             url: apiURL,
@@ -170,12 +149,10 @@ describe("CRUD Operations", () => {
         }).then((response) => {
             // Assert the response status code
             expect(response.status).to.eq(201);
-            cy.log('Response Body:', JSON.stringify(response.body));
             expect(response.body).has.property("name", userName);
             expect(response.body).has.property("email", email);
             expect(response.body).has.property("status", activeTxt);
             userId = response.body.id;
-            cy.log("Created User ID:", userId);
         }).then(() => {
             cy.request({
                 method: "DELETE",
