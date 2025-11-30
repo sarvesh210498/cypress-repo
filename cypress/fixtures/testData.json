@@ -25,5 +25,9 @@
     "subscriptionSuccessMsg": "You have been successfully subscribed!",
     "accountInfoTxt": "Enter Account Information",
     "apiURL": "https://gorest.co.in/public/v2/users",
-    "activeTxt": "active"
+    "activeTxt": "active",
+    "inactiveTxt": "inactive",
+    "maleTxt": "male",
+    "femaleTxt": "female",
+    "automationUser": "AutomationUser"
 }
